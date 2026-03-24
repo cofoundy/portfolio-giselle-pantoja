@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import BrandIcon from "./BrandIcon.astro";
 
 const countryFlag: Record<string, string> = {
   "pe": "🇵🇪",
@@ -31,9 +32,12 @@ const countryFlag: Record<string, string> = {
             <div class="timeline-card bg-[var(--color-surface-light)] rounded-2xl p-6 border border-[var(--color-primary-light)]/10">
               <!-- Header -->
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                <div>
-                  <h3 class="text-lg font-bold text-[var(--color-primary-dark)]">{exp.company}</h3>
-                  <p class="text-sm font-semibold text-[var(--color-primary)]">{exp.title}</p>
+                <div class="flex items-start gap-3">
+                  <BrandIcon name={exp.company} size={28} class="mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 class="text-lg font-bold text-[var(--color-primary-dark)]">{exp.company}</h3>
+                    <p class="text-sm font-semibold text-[var(--color-primary)]">{exp.title}</p>
+                  </div>
                 </div>
                 <div class="flex items-center gap-2 text-sm text-gray-500">
                   <span>{countryFlag[exp.country]}</span>

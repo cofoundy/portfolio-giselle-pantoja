@@ -168,12 +168,12 @@ export const siteConfig = {
   otherCompanies: ["Autopista Central S.A.", "Cybercenter S.A.", "CODELCO"],
 
   certifications: [
-    { name: "PMP", fullName: "Project Management Professional", org: "PMI" },
-    { name: "SM", fullName: "Scrum Master Certified", org: "Scrum Alliance" },
-    { name: "PAL-EBM", fullName: "Professional Agile Leadership", org: "Scrum.org" },
-    { name: "AC", fullName: "Agile Coaching", org: "" },
-    { name: "BAF", fullName: "Business Agility Foundations", org: "" },
-    { name: "ATF", fullName: "Agile Team Facilitation", org: "" },
+    { name: "PMP", fullName: "Project Management Professional", org: "PMI", icon: "pmi" },
+    { name: "SM", fullName: "Scrum Master Certified", org: "Scrum Alliance", icon: "scrumalliance" },
+    { name: "PAL-EBM", fullName: "Professional Agile Leadership", org: "Scrum.org", icon: "scrumorg" },
+    { name: "AC", fullName: "Agile Coaching", org: "", icon: "" },
+    { name: "BAF", fullName: "Business Agility Foundations", org: "", icon: "" },
+    { name: "ATF", fullName: "Agile Team Facilitation", org: "", icon: "" },
   ],
 
   education: [

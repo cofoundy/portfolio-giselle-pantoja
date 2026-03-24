@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import BrandIcon from "./BrandIcon.astro";
 
 // Give each cert a distinct accent color for visual variety
 const certColors: Record<string, { bg: string; text: string; border: string }> = {
@@ -29,9 +30,13 @@ const defaultColor = { bg: "bg-white/10", text: "text-[var(--color-primary-light
         const color = certColors[cert.name] || defaultColor;
         return (
           <div class={`reveal stagger-${Math.min(i + 1, 6)} cert-badge rounded-2xl p-5 border ${color.border} bg-white/[0.03] backdrop-blur-sm text-center`}>
-            <!-- Badge circle with distinct color -->
+            <!-- Badge: real logo if available, colored initials if not -->
             <div class={`w-16 h-16 mx-auto mb-3 rounded-full ${color.bg} flex items-center justify-center border ${color.border}`}>
-              <span class={`text-lg font-bold ${color.text}`}>{cert.name}</span>
+              {cert.icon ? (
+                <BrandIcon name={cert.icon} size={32} />
+              ) : (
+                <span class={`text-lg font-bold ${color.text}`}>{cert.name}</span>
+              )}
             </div>
             <p class="text-sm font-medium text-white/90">{cert.fullName}</p>
             {cert.org && <p class="text-xs text-white/40 mt-1">{cert.org}</p>}
