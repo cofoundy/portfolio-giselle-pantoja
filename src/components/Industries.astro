@@ -48,9 +48,9 @@ const countryFlag: Record<string, string> = {
           <!-- Period -->
           <p class="text-[10px] text-white/40 uppercase tracking-wider">{ind.period}</p>
 
-          <!-- Impact on hover -->
-          <div class="mt-3 pt-3 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p class="text-xs text-[var(--color-primary-light)]">{ind.impact}</p>
+          <!-- Impact always visible -->
+          <div class="mt-3 pt-3 border-t border-white/10">
+            <p class="text-xs text-[var(--color-primary-light)]/70 group-hover:text-[var(--color-primary-light)] transition-colors">{ind.impact}</p>
           </div>
         </div>
       ))}

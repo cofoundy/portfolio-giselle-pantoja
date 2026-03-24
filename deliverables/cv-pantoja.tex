@@ -1,0 +1,159 @@
+% Harvard-Format Professional CV — Giselle Pantoja Altamirano
+% Compile with: xelatex cv-pantoja.tex
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts (macOS system fonts) ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.6em}{0.3em}
+
+% --- List Formatting ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Giselle Nelly Pantoja Altamirano} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Santiago, Chile
+  \quad\faIcon{envelope}\enspace \href{mailto:gpantoja7@hotmail.com}{gpantoja7@hotmail.com}
+  \quad\faIcon{phone}\enspace +56 9 9741 6798
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://www.linkedin.com/in/gisellepantoja-pmp/}{linkedin.com/in/gisellepantoja-pmp}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% RESUMEN PROFESIONAL
+% ============================================
+\section{Perfil Profesional}
+
+Senior Project Manager con m\'{a}s de 20 a\~{n}os de experiencia liderando iniciativas estrat\'{e}gicas de transformaci\'{o}n digital, optimizaci\'{o}n de costos TI y eficiencia operativa en empresas multinacionales de 7+ industrias. Certificada PMP, MBA, Scrum Master y Agile Coach. Historial comprobado de impacto cuantificable: 30\% reducci\'{o}n de costos, 50\% menos atenci\'{o}n presencial, 20\% menos llamadas a call center.
+
+% ============================================
+% EXPERIENCIA PROFESIONAL
+% ============================================
+\section{Experiencia Profesional}
+
+\entry{Rimac Seguros y Reaseguros}{Lima, Per\'{u}}{Gestor de Eficiencia TI}{2025 -- Presente}
+\begin{itemize}
+  \item Dirige el Comit\'{e} de Eficiencia TI, coordinando con l\'{i}deres de \'{a}reas tecnol\'{o}gicas para identificar oportunidades de reducci\'{o}n de costos operativos
+  \item Provee consultor\'{i}a t\'{e}cnica para evaluaciones de proveedores y negociaciones contractuales, optimizando inversiones OPEX/CAPEX
+  \item Impulsa la adopci\'{o}n interna de pr\'{a}cticas FinOps, estableciendo frameworks de gobernanza de costos en la nube
+  \item Colabora con equipos cross-funcionales para alinear iniciativas de eficiencia con la estrategia corporativa
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Galileo by SoFi Technologies}{Santiago, Chile}{Scrum Master | Engineer Manager}{2022 -- 2025}
+\begin{itemize}
+  \item Lider\'{o} el equipo de Excelencia Operacional, definiendo SLAs, SLOs y m\'{e}tricas de uptime para servicios cr\'{i}ticos de fintech
+  \item Implement\'{o} procedimientos de gesti\'{o}n de incidentes y Disaster Recovery, reduciendo tiempos de respuesta ante ca\'{i}das del sistema
+  \item Ejecut\'{o} la integraci\'{o}n del Core Bancario con SSO v\'{i}a OKTA, fortaleciendo la seguridad de acceso para miles de usuarios
+  \item Aplic\'{o} metodolog\'{i}as \'{a}giles (Scrum/Kanban) para incrementar la eficiencia en entregas del equipo de ingenier\'{i}a
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Falabella Tecnolog\'{i}a Corporativa}{Santiago, Chile}{Subgerente de PMO Seguridad}{2021 -- 2022}
+\begin{itemize}
+  \item Dirigi\'{o} la planificaci\'{o}n estrat\'{e}gica y auditor\'{i}a de seguridad digital para una de las mayores retailers de Latinoam\'{e}rica
+  \item Gestion\'{o} el portafolio de proyectos ``MasterPlan'', asegurando el control y seguimiento de iniciativas cr\'{i}ticas de ciberseguridad
+  \item Implement\'{o} marcos de trabajo \'{a}giles para Business Agility, acelerando la transformaci\'{o}n organizacional
+  \item Asegur\'{o} gobernanza y cumplimiento normativo en proyectos de seguridad de informaci\'{o}n
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Ruta del Maipo Sociedad Concesionaria}{Santiago, Chile}{Subgerente de Proyectos de Desarrollo Comercial}{2018 -- 2021}
+\begin{itemize}
+  \item Implement\'{o} software de modelamiento de flujos de tr\'{a}fico, generando un \textbf{30\% de ahorro en costos} operativos
+  \item Dise\~{n}\'{o} e implement\'{o} nuevo canal de atenci\'{o}n v\'{i}a WhatsApp, logrando \textbf{20\% de reducci\'{o}n en llamadas} al Call Center
+  \item Administr\'{o} el presupuesto de TI y desarroll\'{o} el Roadmap Estrat\'{e}gico del Proyecto Free Flow
+  \item Coordin\'{o} equipos multidisciplinarios entre \'{a}reas de TI, operaciones y desarrollo comercial
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Telef\'{o}nica S.A.}{Santiago, Chile}{Scrum Master | Jefe de Proyecto Senior}{2012 -- 2018}
+\begin{itemize}
+  \item Redise\~{n}\'{o} la sucursal virtual para PYMES, logrando \textbf{50\% de reducci\'{o}n en atenci\'{o}n presencial} en oficinas comerciales
+  \item Lider\'{o} el proyecto de ampliaci\'{o}n num\'{e}rica cumpliendo regulaciones SUBTEL en plazos establecidos
+  \item Gestion\'{o} relaciones con proveedores estrat\'{e}gicos para proyectos cr\'{i}ticos de telecomunicaciones
+  \item Aplic\'{o} metodolog\'{i}as \'{a}giles para la transformaci\'{o}n de proyectos digitales en la compa\~{n}\'{i}a
+\end{itemize}
+\vspace{0.3em}
+
+\noindent\textit{Experiencia previa en:} Autopista Central S.A. (Infraestructura vial) $\cdot$ CODELCO (Miner\'{i}a) $\cdot$ Cybercenter S.A. (Marketing Digital)
+
+% ============================================
+% EDUCACION
+% ============================================
+\section{Educaci\'{o}n}
+
+\entry{Universidad Adolfo Ib\'{a}\~{n}ez}{Santiago, Chile}{Master in Business Administration (MBA)}{}
+\vspace{0.3em}
+
+\entry{Universidad de Atacama}{Copiap\'{o}, Chile}{Ingenier\'{i}a Civil Industrial}{}
+\vspace{0.3em}
+
+\entry{Universidad Contempor\'{a}nea de Arica}{Arica, Chile}{Ingenier\'{i}a en Ejecuci\'{o}n en Computaci\'{o}n e Inform\'{a}tica}{}
+\vspace{0.3em}
+
+\noindent\textit{Diplomas:} Transformaci\'{o}n Digital $\cdot$ Finanzas \& Inversiones $\cdot$ Gesti\'{o}n Empresarial
+
+% ============================================
+% CERTIFICACIONES
+% ============================================
+\section{Certificaciones}
+
+\noindent PMP -- Project Management Professional (PMI) $\cdot$ Scrum Master Certified (Scrum Alliance) $\cdot$ Professional Agile Leadership Evidence-Based Management (Scrum.org) $\cdot$ Agile Coaching $\cdot$ Business Agility Foundations $\cdot$ Agile Team Facilitation $\cdot$ PMI -- Generative AI Overview
+
+% ============================================
+% SKILLS & ADDITIONAL
+% ============================================
+\section{Competencias}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{T\'{e}cnicas:} & FinOps, ERP, OKTA/SSO, Disaster Recovery, Seguridad Digital, Presupuestos OPEX/CAPEX \\
+\textbf{Metodolog\'{i}as:} & PMP, Scrum, Agile Coaching, Business Agility, Gesti\'{o}n de Portafolio \\
+\textbf{Gesti\'{o}n:} & Stakeholders, Negociaci\'{o}n de Proveedores, PMO, Gobernanza, Transformaci\'{o}n Digital \\
+\textbf{Industrias:} & Seguros, Fintech, Retail, Telecomunicaciones, Infraestructura Vial, Miner\'{i}a, Marketing Digital \\
+\textbf{Idiomas:} & Espa\~{n}ol (nativo), Ingl\'{e}s (intermedio-avanzado), Franc\'{e}s (b\'{a}sico-intermedio) \\
+\end{tabularx}
+
+\end{document}

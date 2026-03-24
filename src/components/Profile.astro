@@ -12,9 +12,16 @@ import { siteConfig } from "../config";
     </div>
 
     <div class="grid md:grid-cols-3 gap-10">
-      <!-- Summary -->
+      <!-- Summary + quote -->
       <div class="md:col-span-2 reveal stagger-1">
-        <p class="text-lg text-gray-700 leading-relaxed">
+        <!-- Pull quote -->
+        <blockquote class="border-l-4 border-[var(--color-primary-light)] pl-5 mb-6 py-2">
+          <p class="text-lg text-[var(--color-primary-dark)] font-medium italic leading-relaxed">
+            "Especializada en liderar iniciativas de alto impacto que optimizan las operaciones y aceleran el crecimiento empresarial a través de innovación y metodologías ágiles."
+          </p>
+        </blockquote>
+
+        <p class="text-gray-600 leading-relaxed">
           {siteConfig.profile.summary}
         </p>
 
@@ -28,8 +35,8 @@ import { siteConfig } from "../config";
         </div>
       </div>
 
-      <!-- Languages -->
-      <div class="reveal stagger-2">
+      <!-- Languages + quick stats -->
+      <div class="reveal stagger-2 space-y-4">
         <div class="bg-[var(--color-surface-light)] rounded-2xl p-6 border border-[var(--color-primary-light)]/10">
           <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary)] mb-4">Idiomas</h3>
           <div class="space-y-4">
@@ -43,6 +50,16 @@ import { siteConfig } from "../config";
               </div>
             ))}
           </div>
+        </div>
+
+        <!-- Dual nationality badge -->
+        <div class="bg-gradient-to-br from-[var(--color-primary-dark)] to-[var(--color-primary)] rounded-2xl p-5 text-white">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-xl">🇵🇪</span>
+            <span class="text-xl">🇨🇱</span>
+          </div>
+          <p class="text-sm font-semibold text-white/90">Doble Nacionalidad</p>
+          <p class="text-xs text-white/60 mt-1">Perú · Chile — Operación bicultural en ambos mercados</p>
         </div>
       </div>
     </div>

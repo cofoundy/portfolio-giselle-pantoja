@@ -13,24 +13,19 @@ import { siteConfig } from "../config";
 
     <div class="grid md:grid-cols-3 gap-6">
       {siteConfig.impact.map((item, i) => (
-        <div class={`reveal stagger-${i + 1} bg-white rounded-2xl p-8 border border-[var(--color-primary-light)]/10 shadow-sm text-center`}>
+        <div class={`reveal stagger-${i + 1} bg-white rounded-2xl p-8 border border-[var(--color-primary-light)]/10 shadow-sm text-center relative overflow-hidden`}>
+          <!-- Decorative accent bar at top -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)]"></div>
+
           <!-- Big number -->
-          <div class="text-5xl md:text-6xl font-bold text-[var(--color-primary)] mb-2 counter-value" data-value={item.value}>
+          <div class="text-5xl md:text-6xl font-bold text-[var(--color-primary)] mb-2">
             {item.value}
           </div>
 
           <!-- Label -->
-          <h3 class="text-lg font-semibold text-[var(--color-primary-dark)] mb-3">
+          <h3 class="text-lg font-semibold text-[var(--color-primary-dark)] mb-4">
             {item.label}
           </h3>
-
-          <!-- Progress bar visual -->
-          <div class="w-full h-1.5 bg-[var(--color-surface)] rounded-full overflow-hidden mb-4">
-            <div
-              class="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] rounded-full progress-bar"
-              style={`width: ${item.value.replace('%', '')}%; animation-delay: ${0.3 + i * 0.2}s;`}
-            ></div>
-          </div>
 
           <!-- Detail -->
           <p class="text-sm text-gray-500 leading-relaxed">
