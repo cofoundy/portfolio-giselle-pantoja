@@ -64,15 +64,17 @@ const siteUrl = "https://giselle-pantoja.cofoundy.dev";
     <Nav />
     <main>
       <Hero />
+      <WaveDivider from="#0a1e36" to="#ffffff" flip />
       <Profile />
       <WaveDivider from="#ffffff" to="#0f2b4c" />
       <Industries />
-      <WaveDivider from="#0f2b4c" to="#f4f9fd" flip />
+      <!-- Gradient blend instead of wave: navy → light is smoother as a fade -->
+      <div class="h-20 md:h-28 bg-gradient-to-b from-[#0f2b4c] to-[#f4f9fd]"></div>
       <Impact />
       <Experience />
       <WaveDivider from="#ffffff" to="#0d2240" />
       <Certifications />
-      <WaveDivider from="#162d50" to="#f4f9fd" flip />
+      <div class="h-20 md:h-28 bg-gradient-to-b from-[#162d50] to-[#f4f9fd]"></div>
       <Contact />
     </main>
 
