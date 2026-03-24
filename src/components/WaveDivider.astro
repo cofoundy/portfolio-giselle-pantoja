@@ -1,0 +1,15 @@
+---
+interface Props {
+  from?: string;  // top color
+  to?: string;    // bottom color
+  flip?: boolean; // flip vertically
+}
+
+const { from = "#0f2b4c", to = "#ffffff", flip = false } = Astro.props;
+---
+
+<div class={`w-full overflow-hidden leading-[0] ${flip ? 'rotate-180' : ''}`} style={`background: ${to};`}>
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-12 md:h-16" style={`fill: ${from};`}>
+    <path d="M0,0 C360,80 1080,0 1440,60 L1440,0 L0,0 Z" />
+  </svg>
+</div>

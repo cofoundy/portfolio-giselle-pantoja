@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro";
+import WaveDivider from "../components/WaveDivider.astro";
 import Profile from "../components/Profile.astro";
 import Industries from "../components/Industries.astro";
 import Impact from "../components/Impact.astro";
@@ -64,10 +65,14 @@ const siteUrl = "https://giselle-pantoja.cofoundy.dev";
     <main>
       <Hero />
       <Profile />
+      <WaveDivider from="#ffffff" to="#0f2b4c" />
       <Industries />
+      <WaveDivider from="#0f2b4c" to="#f4f9fd" flip />
       <Impact />
       <Experience />
+      <WaveDivider from="#ffffff" to="#0d2240" />
       <Certifications />
+      <WaveDivider from="#162d50" to="#f4f9fd" flip />
       <Contact />
     </main>
 
