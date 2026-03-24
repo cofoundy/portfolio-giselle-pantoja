@@ -1,0 +1,61 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="certificaciones" class="py-20 bg-[var(--color-primary-dark)] text-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="reveal text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">
+        Certificaciones & Educación
+      </h2>
+      <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mx-auto"></div>
+    </div>
+
+    <!-- Certification badges -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-14">
+      {siteConfig.certifications.map((cert, i) => (
+        <div class={`reveal stagger-${Math.min(i + 1, 6)} cert-badge bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 text-center`}>
+          <!-- Badge circle -->
+          <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-[var(--color-primary-light)]/20 flex items-center justify-center">
+            <span class="text-lg font-bold text-[var(--color-primary-light)]">{cert.name}</span>
+          </div>
+          <p class="text-sm font-medium text-white/90">{cert.fullName}</p>
+          {cert.org && <p class="text-xs text-white/50 mt-1">{cert.org}</p>}
+        </div>
+      ))}
+    </div>
+
+    <!-- Education -->
+    <div class="reveal">
+      <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary-light)] mb-6 text-center">
+        Formación Académica
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        {siteConfig.education.map((edu, i) => (
+          <div class={`reveal stagger-${i + 1} bg-white/5 rounded-xl p-5 border border-white/10 text-center`}>
+            <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-[var(--color-primary-light)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {edu.icon === "graduation-cap" && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />}
+                {edu.icon === "building" && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />}
+                {edu.icon === "monitor" && <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />}
+              </svg>
+            </div>
+            <h4 class="text-sm font-bold text-white">{edu.degree}</h4>
+            <p class="text-xs text-white/50 mt-1">{edu.school}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Diplomas -->
+      <div class="mt-6 text-center">
+        <p class="text-xs text-white/40 uppercase tracking-wider mb-2">Diplomas</p>
+        <div class="flex flex-wrap justify-center gap-2">
+          {siteConfig.diplomas.map(d => (
+            <span class="px-3 py-1 text-xs text-white/60 bg-white/5 rounded-full border border-white/10">{d}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

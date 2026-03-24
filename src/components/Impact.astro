@@ -1,0 +1,43 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="impacto" class="py-20 bg-[var(--color-surface-light)]">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="reveal text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary-dark)] mb-2">
+        Impacto en Números
+      </h2>
+      <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      {siteConfig.impact.map((item, i) => (
+        <div class={`reveal stagger-${i + 1} bg-white rounded-2xl p-8 border border-[var(--color-primary-light)]/10 shadow-sm text-center`}>
+          <!-- Big number -->
+          <div class="text-5xl md:text-6xl font-bold text-[var(--color-primary)] mb-2 counter-value" data-value={item.value}>
+            {item.value}
+          </div>
+
+          <!-- Label -->
+          <h3 class="text-lg font-semibold text-[var(--color-primary-dark)] mb-3">
+            {item.label}
+          </h3>
+
+          <!-- Progress bar visual -->
+          <div class="w-full h-1.5 bg-[var(--color-surface)] rounded-full overflow-hidden mb-4">
+            <div
+              class="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] rounded-full progress-bar"
+              style={`width: ${item.value.replace('%', '')}%; animation-delay: ${0.3 + i * 0.2}s;`}
+            ></div>
+          </div>
+
+          <!-- Detail -->
+          <p class="text-sm text-gray-500 leading-relaxed">
+            {item.detail}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

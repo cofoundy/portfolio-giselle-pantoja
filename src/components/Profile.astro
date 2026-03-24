@@ -1,0 +1,50 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="perfil" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="reveal">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary-dark)] mb-2">
+        Perfil Ejecutivo
+      </h2>
+      <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mb-8"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Summary -->
+      <div class="md:col-span-2 reveal stagger-1">
+        <p class="text-lg text-gray-700 leading-relaxed">
+          {siteConfig.profile.summary}
+        </p>
+
+        <!-- Skills as pills -->
+        <div class="mt-6 flex flex-wrap gap-2">
+          {siteConfig.profile.skills.map(skill => (
+            <span class="px-3 py-1.5 text-sm font-medium bg-[var(--color-surface)] text-[var(--color-primary)] rounded-lg border border-[var(--color-primary-light)]/20">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="reveal stagger-2">
+        <div class="bg-[var(--color-surface-light)] rounded-2xl p-6 border border-[var(--color-primary-light)]/10">
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary)] mb-4">Idiomas</h3>
+          <div class="space-y-4">
+            {siteConfig.profile.languages.map(lang => (
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">{lang.flag}</span>
+                <div>
+                  <div class="text-sm font-semibold text-[var(--color-primary-dark)]">{lang.name}</div>
+                  <div class="text-xs text-gray-500">{lang.level}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
