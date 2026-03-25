@@ -25,32 +25,32 @@ const countryFlag: Record<string, string> = {
       </h2>
       <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mx-auto mb-4"></div>
       <p class="text-white/60 text-lg max-w-2xl mx-auto">
-        Más de dos décadas llevando eficiencia, metodología ágil y transformación digital a sectores diversos
+        Con más de 20 años de experiencia optimizando procesos, implementando Agilidad a escala y liderando la Transformación Digital en múltiples industrias
       </p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {siteConfig.industries.map((ind, i) => (
-        <div class={`reveal stagger-${Math.min(i + 1, 7)} industry-card group bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10 cursor-default`}>
+        <div class={`reveal stagger-${Math.min(i + 1, 7)} industry-card group bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-default`}>
           <!-- Icon -->
-          <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--color-primary-light)]/20 text-[var(--color-primary-light)] mb-3 group-hover:bg-[var(--color-primary-light)]/30 transition-colors">
+          <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--color-primary-light)]/15 text-[var(--color-primary)] mb-3 group-hover:bg-[var(--color-primary-light)]/25 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" set:html={iconMap[ind.icon] || iconMap["shield"]} />
           </div>
 
           <!-- Industry name -->
-          <h3 class="text-sm font-bold text-white mb-1">{ind.name}</h3>
+          <h3 class="text-sm font-bold text-[var(--color-primary-dark)] mb-1">{ind.name}</h3>
 
           <!-- Company -->
-          <p class="text-xs text-white/60 mb-2">
+          <p class="text-xs text-gray-500 mb-2">
             {countryFlag[ind.country]} {ind.company}
           </p>
 
           <!-- Period -->
-          <p class="text-[10px] text-white/40 uppercase tracking-wider">{ind.period}</p>
+          <p class="text-[10px] text-gray-400 uppercase tracking-wider">{ind.period}</p>
 
           <!-- Impact always visible -->
-          <div class="mt-3 pt-3 border-t border-white/10">
-            <p class="text-xs text-[var(--color-primary-light)]/70 group-hover:text-[var(--color-primary-light)] transition-colors">{ind.impact}</p>
+          <div class="mt-3 pt-3 border-t border-gray-100">
+            <p class="text-xs text-[var(--color-primary)] group-hover:text-[var(--color-primary-dark)] transition-colors">{ind.impact}</p>
           </div>
         </div>
       ))}

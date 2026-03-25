@@ -11,7 +11,7 @@ import Contact from "../components/Contact.astro";
 import { siteConfig } from "../config";
 import "../styles/global.css";
 
-const siteUrl = "https://giselle-pantoja.cofoundy.dev";
+const siteUrl = "https://giselle-pantoja.com";
 ---
 
 <html lang="es" style={`--color-primary-dark:${siteConfig.colors.primaryDark};--color-primary:${siteConfig.colors.primary};--color-primary-light:${siteConfig.colors.primaryLight};--color-accent:${siteConfig.colors.accent};--color-surface:${siteConfig.colors.surface};--color-surface-light:${siteConfig.colors.surfaceLight}`}>
@@ -72,9 +72,8 @@ const siteUrl = "https://giselle-pantoja.cofoundy.dev";
       <div class="h-20 md:h-28 bg-gradient-to-b from-[#0f2b4c] to-[#f4f9fd]"></div>
       <Impact />
       <Experience />
-      <WaveDivider from="#ffffff" to="#0d2240" />
       <Certifications />
-      <div class="h-20 md:h-28 bg-gradient-to-b from-[#162d50] to-[#f4f9fd]"></div>
+      <WaveDivider from="#f4f9fd" to="#0f2b4c" />
       <Contact />
     </main>
 

@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Giselle Pantoja Altamirano",
-  title: "Senior Project Manager | PMP | MBA | Agile Coach",
-  description: "Portfolio profesional de Giselle Pantoja — Líder en transformación digital con 20+ años de experiencia en 7+ industrias. PMP, MBA, Scrum Master, Agile Coach.",
+  title: "Senior Project Manager | MBA | FinOps | Agile Coach",
+  description: "Portfolio profesional de Giselle Pantoja — Ejecutiva senior con 20+ años en multinacionales, liderando transformación digital en 7+ industrias. MBA, FinOps, PMP, Agile Coach.",
 
   colors: {
     primaryDark: "#0f2b4c",   // Deep navy — authority, trust
@@ -14,28 +14,29 @@ export const siteConfig = {
 
   tagline: "Transformando industrias con eficiencia y agilidad",
 
+  heroTags: ["MBA", "FINOPS", "PMP", "AGILE COACH"],
+
   stats: [
     { value: "20+", label: "Años de experiencia" },
     { value: "7+", label: "Industrias transformadas" },
     { value: "6", label: "Certificaciones" },
-    { value: "PMP", label: "MBA · Agile Coach" },
   ],
 
   profile: {
-    summary: "Líder con más de 20 años de experiencia liderando iniciativas estratégicas en empresas multinacionales. Especializada en optimización de costos TI, eficiencia operativa, implementaciones de ERP y transformación digital.",
+    summary: "Ejecutiva senior con más de 20 años en multinacionales, liderando iniciativas estratégicas que generan eficiencia y rentabilidad. Experta en optimización de costos TI, eficiencia operativa, implementación de ERP y transformación digital, con foco en resultados medibles y ejecución efectiva.",
     skills: [
-      "Gestión de Stakeholders",
       "Optimización FinOps",
       "Liderazgo de Equipos",
-      "Metodologías Ágiles",
       "Transformación Digital",
+      "Metodologías Ágiles",
+      "Optimización OPEX/CAPEX",
       "Business Agility",
-      "Negociación de Proveedores",
-      "Presupuestos OPEX/CAPEX",
+      "Gestión de Proyectos",
+      "Gestión de Stakeholders",
     ],
     languages: [
       { name: "Español", level: "Nativo", flag: "🇪🇸" },
-      { name: "English", level: "Intermediate-Advanced", flag: "🇬🇧" },
+      { name: "English", level: "Upper-Intermediate", flag: "🇬🇧" },
       { name: "Français", level: "Basic-Intermediate", flag: "🇫🇷" },
     ],
   },
@@ -67,7 +68,7 @@ export const siteConfig = {
     },
     {
       icon: "road",
-      name: "Infraestructura",
+      name: "Infraestructura Vial",
       company: "Ruta del Maipo",
       period: "2018 – 2021",
       impact: "30% ahorro costos, -20% llamadas",
@@ -85,15 +86,15 @@ export const siteConfig = {
       icon: "pickaxe",
       name: "Minería",
       company: "CODELCO",
-      period: "Anterior",
-      impact: "La mayor empresa de Chile",
+      period: "1997 – 2003",
+      impact: "Corporación Nacional del Cobre de Chile",
       country: "cl",
     },
     {
       icon: "megaphone",
       name: "Marketing Digital",
       company: "Cybercenter",
-      period: "Anterior",
+      period: "2008 – 2009",
       impact: "Agencia de marketing digital",
       country: "cl",
     },
@@ -163,14 +164,42 @@ export const siteConfig = {
         "Gestión de proveedores estratégicos para proyectos críticos",
       ],
     },
+    {
+      company: "Cybercenter S.A.",
+      title: "Director de Negocios",
+      period: "2008 – 2009",
+      country: "cl",
+      bullets: [
+        "Liderazgo en proyectos digitales: Dirigí el rediseño del sitio web de la Universidad Finis Terrae, cumpliendo plazos al 100% y logrando alta satisfacción del cliente",
+        "Capacitación en UX de clase mundial: Participé en el seminario de Jacob Nielsen (Norman Nielsen Group) en Chicago, adquiriendo conocimientos de usabilidad de vanguardia",
+      ],
+    },
+    {
+      company: "Autopista Central S.A.",
+      title: "Ingeniero Senior",
+      period: "2003 – 2007",
+      country: "cl",
+      bullets: [
+        "Lideré el levantamiento de procesos para implementación de SAP CRM y MM, asegurando el cumplimiento de las bases de licitación del MOP en el proyecto pionero de concesiones viales urbanas de Chile (Ruta 5, 60 km)",
+      ],
+    },
+    {
+      company: "CODELCO",
+      title: "Ingeniero de Nuevas Tecnologías",
+      period: "1997 – 2003",
+      country: "cl",
+      bullets: [
+        "Implementación pionera: Primer portal MySAP Enterprise Portal 5.0 en Chile, posicionando a Codelco como early adopter y socio estratégico de SAP",
+        "Posicionamiento: acceso prioritario a tecnologías beta sin costos adicionales, generando ventajas competitivas sostenidas",
+        "Valor reputacional: Fortalecimiento de la imagen de Codelco como referente en innovación y adopción temprana de tecnologías SAP",
+      ],
+    },
   ],
-
-  otherCompanies: ["Autopista Central S.A.", "Cybercenter S.A.", "CODELCO"],
 
   certifications: [
     { name: "PMP", fullName: "Project Management Professional", org: "PMI", icon: "pmi" },
     { name: "SM", fullName: "Scrum Master Certified", org: "Scrum Alliance", icon: "scrumalliance" },
-    { name: "PAL-EBM", fullName: "Professional Agile Leadership", org: "Scrum.org", icon: "scrumorg" },
+    { name: "PAL-EBM", fullName: "Professional Agile Leadership - Evidence-Based Management", org: "Scrum.org", icon: "scrumorg" },
     { name: "AC", fullName: "Agile Coaching", org: "", icon: "" },
     { name: "BAF", fullName: "Business Agility Foundations", org: "", icon: "" },
     { name: "ATF", fullName: "Agile Team Facilitation", org: "", icon: "" },
@@ -182,10 +211,10 @@ export const siteConfig = {
     { degree: "Ing. Computación e Informática", school: "Universidad Contemporánea de Arica", icon: "monitor" },
   ],
 
-  diplomas: ["Transformación Digital", "Finanzas & Inversiones", "Gestión Empresarial"],
+  diplomas: ["Transformación Digital", "Finanzas & Inversiones", "Gestión Empresarial", "Preparación y Evaluación de Proyectos"],
 
   social: {
-    email: "gpantoja7@hotmail.com",
+    email: "gizperu.m@gmail.com",
     linkedin: "https://www.linkedin.com/in/gisellepantoja-pmp/",
     phoneCL: "+56 9 9741 6798",
     phonePE: "+51 986 012 947",
