@@ -2,7 +2,7 @@
 
 Portafolio profesional.
 
-**Live:** *Se actualizará después del deploy*
+**Live:** [giselle-pantoja.cofoundy.dev](https://giselle-pantoja.cofoundy.dev/)
 
 ## Tech Stack
 
