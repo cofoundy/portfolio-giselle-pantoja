@@ -200,9 +200,9 @@ export const siteConfig = {
     { name: "PMP", fullName: "Project Management Professional", org: "PMI", icon: "pmi" },
     { name: "SM", fullName: "Scrum Master Certified", org: "Scrum Alliance", icon: "scrumalliance" },
     { name: "PAL-EBM", fullName: "Professional Agile Leadership - Evidence-Based Management", org: "Scrum.org", icon: "scrumorg" },
-    { name: "AC", fullName: "Agile Coaching", org: "", icon: "" },
-    { name: "BAF", fullName: "Business Agility Foundations", org: "", icon: "" },
-    { name: "ATF", fullName: "Agile Team Facilitation", org: "", icon: "" },
+    { name: "ICP-ACC", fullName: "ICAgile Certified Professional – Agile Coaching", org: "ICAgile", icon: "icpacc" },
+    { name: "ICP-BAF", fullName: "ICAgile Certified Professional – Business Agility Foundations", org: "ICAgile", icon: "icpbaf" },
+    { name: "ICP-ATF", fullName: "ICAgile Certified Professional – Agile Team Facilitation", org: "ICAgile", icon: "icpatf" },
   ],
 
   education: [
