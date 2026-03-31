@@ -56,14 +56,18 @@ const switchLabel = lang === "es" ? "EN" : "ES";
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
+  const heroLang = document.getElementById('hero-lang');
+
   window.addEventListener('scroll', () => {
     if (!nav) return;
     if (window.scrollY > 500) {
       nav.classList.remove('opacity-0', 'pointer-events-none');
       nav.classList.add('opacity-100', 'pointer-events-auto', 'header-visible');
+      if (heroLang) heroLang.classList.add('opacity-0', 'pointer-events-none');
     } else {
       nav.classList.add('opacity-0', 'pointer-events-none');
       nav.classList.remove('opacity-100', 'pointer-events-auto');
+      if (heroLang) heroLang.classList.remove('opacity-0', 'pointer-events-none');
     }
   });
 

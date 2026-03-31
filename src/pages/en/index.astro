@@ -63,6 +63,8 @@ const siteUrl = "https://giselle-pantoja.com";
     <title>{siteConfig.name} - {siteConfig.title}</title>
   </head>
   <body class="bg-white">
+    <!-- Language switcher (visible before floating nav appears) -->
+    <a id="hero-lang" href="/" class="fixed top-4 right-4 z-40 text-white/60 hover:text-white text-xs font-semibold tracking-wider uppercase border border-white/20 rounded-full px-3 py-1.5 hover:bg-white/10 backdrop-blur-sm transition-all">ES</a>
     <Nav config={siteConfig} lang="en" />
     <main>
       <Hero config={siteConfig} />
