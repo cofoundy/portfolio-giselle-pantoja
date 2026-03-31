@@ -219,4 +219,48 @@ export const siteConfig = {
     phoneCL: "+56 9 9741 6798",
     phonePE: "+51 986 012 947",
   },
+
+  // UI labels for section headings and static text
+  labels: {
+    nav: {
+      profile: "Perfil",
+      industries: "Industrias",
+      impact: "Impacto",
+      experience: "Trayectoria",
+      certifications: "Certificaciones",
+      contact: "Contacto",
+      menu: "Menú",
+    },
+    profile: {
+      heading: "Perfil Ejecutivo",
+      quote: "Especializada en liderar iniciativas de alto impacto que optimizan las operaciones y aceleran el crecimiento empresarial a través de innovación y metodologías ágiles.",
+      languages: "Idiomas",
+      regional: "Experiencia Regional | Perú & Chile",
+      regionalDetail: "Operación y liderazgo en entornos multiculturales",
+    },
+    industries: {
+      heading: "Transformando Industrias",
+      subtitle: "Con más de 20 años de experiencia optimizando procesos, implementando Agilidad a escala y liderando la Transformación Digital en múltiples industrias",
+    },
+    impact: {
+      heading: "Impacto en Números",
+    },
+    experience: {
+      heading: "Trayectoria Profesional",
+    },
+    certifications: {
+      heading: "Certificaciones & Educación",
+      education: "Formación Académica",
+      diplomas: "Diplomas",
+    },
+    contact: {
+      heading: "Trabajemos juntos",
+      subtitle: "A disposición para liderar la gestión de proyectos estratégicos, dirigir procesos de transformación digital y asesorar en la implementación de cultura ágil a nivel organizacional.",
+      email: "Escríbeme",
+    },
+    hero: {
+      location: "Santiago, Chile · Lima, Perú",
+      contactBtn: "Contacto",
+    },
+  },
 };

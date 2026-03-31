@@ -1,13 +1,21 @@
 ---
-import { siteConfig } from "../config";
+import { siteConfig as defaultConfig } from "../config";
 import BrandIcon from "./BrandIcon.astro";
+
+interface Props {
+  config?: typeof defaultConfig;
+}
+
+const { config = defaultConfig } = Astro.props;
+const siteConfig = config;
+const l = config.labels.certifications;
 ---
 
 <section id="certificaciones" class="py-20 bg-[var(--color-surface-light)]">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary-dark)] mb-2">
-        Certificaciones & Educación
+        {l.heading}
       </h2>
       <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mx-auto"></div>
     </div>
@@ -40,7 +48,7 @@ import BrandIcon from "./BrandIcon.astro";
     <!-- Education -->
     <div class="reveal">
       <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary)] mb-6 text-center">
-        Formación Académica
+        {l.education}
       </h3>
 
       <div class="grid md:grid-cols-3 gap-4">
@@ -54,7 +62,7 @@ import BrandIcon from "./BrandIcon.astro";
 
       <!-- Diplomas -->
       <div class="mt-6 text-center">
-        <p class="text-xs text-gray-400 uppercase tracking-wider mb-2">Diplomas</p>
+        <p class="text-xs text-gray-400 uppercase tracking-wider mb-2">{l.diplomas}</p>
         <div class="flex flex-wrap justify-center gap-2">
           {siteConfig.diplomas.map(d => (
             <span class="px-3 py-1 text-xs text-gray-600 bg-white rounded-full border border-gray-100">{d}</span>

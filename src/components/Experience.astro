@@ -1,6 +1,14 @@
 ---
-import { siteConfig } from "../config";
+import { siteConfig as defaultConfig } from "../config";
 import BrandIcon from "./BrandIcon.astro";
+
+interface Props {
+  config?: typeof defaultConfig;
+}
+
+const { config = defaultConfig } = Astro.props;
+const siteConfig = config;
+const l = config.labels.experience;
 
 const countryFlag: Record<string, string> = {
   "pe": "🇵🇪",
@@ -12,7 +20,7 @@ const countryFlag: Record<string, string> = {
   <div class="max-w-4xl mx-auto px-6">
     <div class="reveal text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary-dark)] mb-2">
-        Trayectoria Profesional
+        {l.heading}
       </h2>
       <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mx-auto"></div>
     </div>

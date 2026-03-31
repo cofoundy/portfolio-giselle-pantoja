@@ -1,20 +1,20 @@
 ---
-import Nav from "../components/Nav.astro";
-import Hero from "../components/Hero.astro";
-import WaveDivider from "../components/WaveDivider.astro";
-import Profile from "../components/Profile.astro";
-import Industries from "../components/Industries.astro";
-import Impact from "../components/Impact.astro";
-import Experience from "../components/Experience.astro";
-import Certifications from "../components/Certifications.astro";
-import Contact from "../components/Contact.astro";
-import { siteConfig } from "../config";
-import "../styles/global.css";
+import Nav from "../../components/Nav.astro";
+import Hero from "../../components/Hero.astro";
+import WaveDivider from "../../components/WaveDivider.astro";
+import Profile from "../../components/Profile.astro";
+import Industries from "../../components/Industries.astro";
+import Impact from "../../components/Impact.astro";
+import Experience from "../../components/Experience.astro";
+import Certifications from "../../components/Certifications.astro";
+import Contact from "../../components/Contact.astro";
+import { siteConfig } from "../../config-en";
+import "../../styles/global.css";
 
 const siteUrl = "https://giselle-pantoja.com";
 ---
 
-<html lang="es" style={`--color-primary-dark:${siteConfig.colors.primaryDark};--color-primary:${siteConfig.colors.primary};--color-primary-light:${siteConfig.colors.primaryLight};--color-accent:${siteConfig.colors.accent};--color-surface:${siteConfig.colors.surface};--color-surface-light:${siteConfig.colors.surfaceLight}`}>
+<html lang="en" style={`--color-primary-dark:${siteConfig.colors.primaryDark};--color-primary:${siteConfig.colors.primary};--color-primary-light:${siteConfig.colors.primaryLight};--color-accent:${siteConfig.colors.accent};--color-surface:${siteConfig.colors.surface};--color-surface-light:${siteConfig.colors.surfaceLight}`}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -29,8 +29,8 @@ const siteUrl = "https://giselle-pantoja.com";
     <meta property="og:image" content={`${siteUrl}/og.jpg`} />
     <meta name="twitter:image" content={`${siteUrl}/og.jpg`} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="keywords" content="Giselle Pantoja, Project Manager, PMP, MBA, Agile Coach, Scrum Master, FinOps, Transformación Digital, Santiago Chile, Lima Perú" />
-    <link rel="canonical" href={`${siteUrl}/`} />
+    <meta name="keywords" content="Giselle Pantoja, Project Manager, PMP, MBA, Agile Coach, Scrum Master, FinOps, Digital Transformation, Santiago Chile, Lima Peru" />
+    <link rel="canonical" href={`${siteUrl}/en/`} />
     <link rel="alternate" hreflang="es" href={`${siteUrl}/`} />
     <link rel="alternate" hreflang="en" href={`${siteUrl}/en/`} />
 
@@ -40,7 +40,7 @@ const siteUrl = "https://giselle-pantoja.com";
       "@type": "Person",
       "name": siteConfig.name,
       "jobTitle": "Senior Project Manager | PMP | MBA | Agile Coach",
-      "url": `${siteUrl}/`,
+      "url": `${siteUrl}/en/`,
       "image": `${siteUrl}/og.jpg`,
       "sameAs": [siteConfig.social.linkedin],
       "worksFor": { "@type": "Organization", "name": "Rimac Seguros y Reaseguros" },
@@ -63,20 +63,20 @@ const siteUrl = "https://giselle-pantoja.com";
     <title>{siteConfig.name} - {siteConfig.title}</title>
   </head>
   <body class="bg-white">
-    <Nav lang="es" />
+    <Nav config={siteConfig} lang="en" />
     <main>
-      <Hero />
+      <Hero config={siteConfig} />
       <WaveDivider from="#0a1e36" to="#ffffff" flip />
-      <Profile />
+      <Profile config={siteConfig} />
       <WaveDivider from="#ffffff" to="#0f2b4c" />
-      <Industries />
+      <Industries config={siteConfig} />
       <!-- Gradient blend instead of wave: navy → light is smoother as a fade -->
       <div class="h-20 md:h-28 bg-gradient-to-b from-[#0f2b4c] to-[#f4f9fd]"></div>
-      <Impact />
-      <Experience />
-      <Certifications />
+      <Impact config={siteConfig} />
+      <Experience config={siteConfig} />
+      <Certifications config={siteConfig} />
       <WaveDivider from="#f4f9fd" to="#0f2b4c" />
-      <Contact />
+      <Contact config={siteConfig} />
     </main>
 
     <!-- Scroll Reveal -->

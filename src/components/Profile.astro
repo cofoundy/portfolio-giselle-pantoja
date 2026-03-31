@@ -1,12 +1,20 @@
 ---
-import { siteConfig } from "../config";
+import { siteConfig as defaultConfig } from "../config";
+
+interface Props {
+  config?: typeof defaultConfig;
+}
+
+const { config = defaultConfig } = Astro.props;
+const siteConfig = config;
+const l = config.labels.profile;
 ---
 
 <section id="perfil" class="py-20 bg-white">
   <div class="max-w-5xl mx-auto px-6">
     <div class="reveal">
       <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-primary-dark)] mb-2">
-        Perfil Ejecutivo
+        {l.heading}
       </h2>
       <div class="w-16 h-1 bg-[var(--color-primary-light)] rounded-full mb-8"></div>
     </div>
@@ -17,7 +25,7 @@ import { siteConfig } from "../config";
         <!-- Pull quote -->
         <blockquote class="border-l-4 border-[var(--color-primary-light)] pl-5 mb-6 py-2">
           <p class="text-lg text-[var(--color-primary-dark)] font-medium italic leading-relaxed">
-            "Especializada en liderar iniciativas de alto impacto que optimizan las operaciones y aceleran el crecimiento empresarial a través de innovación y metodologías ágiles."
+            &ldquo;{l.quote}&rdquo;
           </p>
         </blockquote>
 
@@ -38,7 +46,7 @@ import { siteConfig } from "../config";
       <!-- Languages + quick stats -->
       <div class="reveal stagger-2 space-y-4">
         <div class="bg-[var(--color-surface-light)] rounded-2xl p-6 border border-[var(--color-primary-light)]/10">
-          <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary)] mb-4">Idiomas</h3>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-[var(--color-primary)] mb-4">{l.languages}</h3>
           <div class="space-y-4">
             {siteConfig.profile.languages.map(lang => (
               <div class="flex items-center gap-3">
@@ -58,8 +66,8 @@ import { siteConfig } from "../config";
             <span class="text-xl">🇵🇪</span>
             <span class="text-xl">🇨🇱</span>
           </div>
-          <p class="text-sm font-semibold text-white/90">Experiencia Regional | Perú & Chile</p>
-          <p class="text-xs text-white/60 mt-1">Operación y liderazgo en entornos multiculturales</p>
+          <p class="text-sm font-semibold text-white/90">{l.regional}</p>
+          <p class="text-xs text-white/60 mt-1">{l.regionalDetail}</p>
         </div>
       </div>
     </div>
