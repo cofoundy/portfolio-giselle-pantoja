@@ -12,7 +12,7 @@ export const siteConfig = {
     surfaceLight: "#f4f9fd",  // Almost white — main bg
   },
 
-  tagline: "Transforming industries through efficiency and agility",
+  tagline: "Driving enterprise transformation by turning technology into measurable business performance (cost, scale, and growth)",
 
   heroTags: ["MBA", "FINOPS", "PMP", "AGILE COACH"],
 
@@ -23,13 +23,13 @@ export const siteConfig = {
   ],
 
   profile: {
-    summary: "Senior executive with over 20 years of experience in multinational corporations, leading strategic initiatives that drive operational efficiency and profitability. Expert in IT cost optimization, operational efficiency, ERP implementation, and digital transformation — with a strong focus on measurable results and effective execution.",
+    summary: "Senior executive with over 20 years of experience in multinational corporations, leading strategic initiatives that drive operational efficiency and profitability. Expert in IT cost optimization, operational efficiency, ERP implementation (enabled cost visibility and decision-making at executive level), and digital transformation — with a strong focus on measurable results and effective execution.",
     skills: [
       "FinOps Optimization",
       "Team Leadership",
       "Digital Transformation",
       "Agile Methodologies",
-      "OPEX/CAPEX Optimization",
+      "Optimizing cost structures to improve profitability and capital efficiency",
       "Business Agility",
       "Project Management",
       "Stakeholder Management",
@@ -232,8 +232,8 @@ export const siteConfig = {
       menu: "Menu",
     },
     profile: {
-      heading: "Executive Profile",
-      quote: "Specialized in leading high-impact initiatives that optimize operations and accelerate business growth through innovation and agile methodologies.",
+      heading: "Executive Value Proposition",
+      quote: "I help organizations reduce technology cost structures while increasing delivery speed and business agility.",
       languages: "Languages",
       regional: "Regional Experience | Peru & Chile",
       regionalDetail: "Leadership across multicultural environments",

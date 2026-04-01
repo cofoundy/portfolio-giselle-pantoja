@@ -12,7 +12,7 @@ export const siteConfig = {
     surfaceLight: "#f4f9fd",  // Almost white — main bg
   },
 
-  tagline: "Transformando industrias con eficiencia y agilidad",
+  tagline: "Liderando transformaciones empresariales convirtiendo la tecnología en resultados medibles de negocio (costos, escalabilidad y crecimiento)",
 
   heroTags: ["MBA", "FINOPS", "PMP", "AGILE COACH"],
 
@@ -23,13 +23,13 @@ export const siteConfig = {
   ],
 
   profile: {
-    summary: "Ejecutiva senior con más de 20 años en multinacionales, liderando iniciativas estratégicas que generan eficiencia y rentabilidad. Experta en optimización de costos TI, eficiencia operativa, implementación de ERP y transformación digital, con foco en resultados medibles y ejecución efectiva.",
+    summary: "Ejecutiva senior con más de 20 años en multinacionales, liderando iniciativas estratégicas que generan eficiencia y rentabilidad. Experta en optimización de costos TI, eficiencia operativa, implementación de ERP (generación de visibilidad de costos para fortalecer la toma de decisiones a nivel ejecutivo) y transformación digital, con foco en resultados medibles y ejecución efectiva.",
     skills: [
       "Optimización FinOps",
       "Liderazgo de Equipos",
       "Transformación Digital",
       "Metodologías Ágiles",
-      "Optimización OPEX/CAPEX",
+      "Optimización de la estructura de costos con foco en rentabilidad y eficiencia de capital",
       "Business Agility",
       "Gestión de Proyectos",
       "Gestión de Stakeholders",
@@ -232,8 +232,8 @@ export const siteConfig = {
       menu: "Menú",
     },
     profile: {
-      heading: "Perfil Ejecutivo",
-      quote: "Especializada en liderar iniciativas de alto impacto que optimizan las operaciones y aceleran el crecimiento empresarial a través de innovación y metodologías ágiles.",
+      heading: "Propuesta de Valor Ejecutiva",
+      quote: "Ayudo a organizaciones a reducir costos tecnológicos mientras aumentan velocidad de ejecución y agilidad del negocio.",
       languages: "Idiomas",
       regional: "Experiencia Regional | Perú & Chile",
       regionalDetail: "Operación y liderazgo en entornos multiculturales",
