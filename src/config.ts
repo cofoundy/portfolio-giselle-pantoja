@@ -75,6 +75,14 @@ export const siteConfig = {
       country: "cl",
     },
     {
+      icon: "road",
+      name: "Infraestructura Vial",
+      company: "Autopista Central",
+      period: "2003 – 2007",
+      impact: "SAP CRM/MM, concesiones viales urbanas",
+      country: "cl",
+    },
+    {
       icon: "phone",
       name: "Telecomunicaciones",
       company: "Telefónica",
@@ -109,6 +117,7 @@ export const siteConfig = {
   experience: [
     {
       company: "Rimac Seguros y Reaseguros",
+      logo: "rimac",
       title: "Gestor de Eficiencia TI",
       period: "2025 – Presente",
       country: "pe",
@@ -121,6 +130,7 @@ export const siteConfig = {
     },
     {
       company: "Galileo by SoFi Technologies",
+      logo: "galileo",
       title: "Scrum Master | Engineer Manager",
       period: "2022 – 2025",
       country: "cl",
@@ -133,6 +143,7 @@ export const siteConfig = {
     },
     {
       company: "Falabella Tecnología Corporativa",
+      logo: "falabella",
       title: "Subgerente de PMO Seguridad",
       period: "2021 – 2022",
       country: "cl",
@@ -144,6 +155,7 @@ export const siteConfig = {
     },
     {
       company: "Ruta del Maipo Sociedad Concesionaria",
+      logo: "rutadelmaipo",
       title: "Subgerente de Proyectos",
       period: "2018 – 2021",
       country: "cl",
@@ -155,6 +167,7 @@ export const siteConfig = {
     },
     {
       company: "Telefónica S.A.",
+      logo: "telefonica",
       title: "Scrum Master | Jefe de Proyecto Senior",
       period: "2012 – 2018",
       country: "cl",
@@ -166,6 +179,7 @@ export const siteConfig = {
     },
     {
       company: "Cybercenter S.A.",
+      logo: "cybercenter",
       title: "Director de Negocios",
       period: "2008 – 2009",
       country: "cl",
@@ -176,6 +190,7 @@ export const siteConfig = {
     },
     {
       company: "Autopista Central S.A.",
+      logo: "autopistacentral",
       title: "Ingeniero Senior",
       period: "2003 – 2007",
       country: "cl",
@@ -185,6 +200,7 @@ export const siteConfig = {
     },
     {
       company: "CODELCO",
+      logo: "codelco",
       title: "Ingeniero de Nuevas Tecnologías",
       period: "1997 – 2003",
       country: "cl",
@@ -198,7 +214,7 @@ export const siteConfig = {
 
   certifications: [
     { name: "PMP", fullName: "Project Management Professional", org: "PMI", icon: "pmi" },
-    { name: "SM", fullName: "Scrum Master Certified", org: "Scrum Alliance", icon: "scrumalliance" },
+    { name: "SMC", fullName: "Scrum Master Certified (SMC\u00AE)", org: "ScrumStudy", icon: "scrumstudy" },
     { name: "PAL-EBM", fullName: "Professional Agile Leadership - Evidence-Based Management", org: "Scrum.org", icon: "scrumorg" },
     { name: "ICP-ACC", fullName: "ICAgile Certified Professional – Agile Coaching", org: "ICAgile", icon: "icpacc" },
     { name: "ICP-BAF", fullName: "ICAgile Certified Professional – Business Agility Foundations", org: "ICAgile", icon: "icpbaf" },
@@ -206,9 +222,9 @@ export const siteConfig = {
   ],
 
   education: [
-    { degree: "MBA", school: "Universidad Adolfo Ibáñez", icon: "graduation-cap" },
-    { degree: "Ingeniería Civil Industrial", school: "Universidad de Atacama", icon: "building" },
-    { degree: "Ing. Computación e Informática", school: "Universidad Contemporánea de Arica", icon: "monitor" },
+    { degree: "MBA", school: "Universidad Adolfo Ibáñez", logo: "uai" },
+    { degree: "Ingeniería Civil Industrial", school: "Universidad de Atacama", logo: "uda" },
+    { degree: "Ing. Computación e Informática", school: "Universidad Contemporánea de Arica" },
   ],
 
   diplomas: ["Transformación Digital", "Finanzas & Inversiones", "Gestión Empresarial", "Preparación y Evaluación de Proyectos"],
