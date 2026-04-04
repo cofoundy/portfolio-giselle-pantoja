@@ -1,0 +1,126 @@
+{
+  "url": "https://giselle-pantoja.com/en/",
+  "timestamp": "2026-04-03T09:42:37.200Z",
+  "desktop": {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "full": {
+      "file": "desktop-full.png",
+      "fileSize": "1182KB"
+    },
+    "sections": [
+      {
+        "file": "desktop-section-0.png",
+        "section": "section-0",
+        "height": 900,
+        "fileSize": "463KB"
+      },
+      {
+        "file": "desktop-perfil.png",
+        "section": "perfil",
+        "height": 657,
+        "fileSize": "128KB"
+      },
+      {
+        "file": "desktop-industrias.png",
+        "section": "industrias",
+        "height": 784,
+        "fileSize": "88KB"
+      },
+      {
+        "file": "desktop-impacto.png",
+        "section": "impacto",
+        "height": 492,
+        "fileSize": "46KB"
+      },
+      {
+        "file": "desktop-trayectoria.png",
+        "section": "trayectoria",
+        "height": 2042,
+        "fileSize": "282KB"
+      },
+      {
+        "file": "desktop-certificaciones.png",
+        "section": "certificaciones",
+        "height": 1128,
+        "fileSize": "119KB"
+      },
+      {
+        "file": "desktop-contacto.png",
+        "section": "contacto",
+        "height": 422,
+        "fileSize": "35KB"
+      },
+      {
+        "file": "desktop-footer-7.png",
+        "section": "footer-7",
+        "height": 65,
+        "fileSize": "3KB"
+      }
+    ],
+    "pageHeight": 6863
+  },
+  "mobile": {
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "full": {
+      "file": "mobile-full.png",
+      "fileSize": "886KB"
+    },
+    "sections": [
+      {
+        "file": "mobile-section-0.png",
+        "section": "section-0",
+        "height": 838,
+        "fileSize": "203KB"
+      },
+      {
+        "file": "mobile-perfil.png",
+        "section": "perfil",
+        "height": 1379,
+        "fileSize": "122KB"
+      },
+      {
+        "file": "mobile-industrias.png",
+        "section": "industrias",
+        "height": 2116,
+        "fileSize": "109KB"
+      },
+      {
+        "file": "mobile-impacto.png",
+        "section": "impacto",
+        "height": 947,
+        "fileSize": "50KB"
+      },
+      {
+        "file": "mobile-trayectoria.png",
+        "section": "trayectoria",
+        "height": 3282,
+        "fileSize": "268KB"
+      },
+      {
+        "file": "mobile-certificaciones.png",
+        "section": "certificaciones",
+        "height": 1519,
+        "fileSize": "103KB"
+      },
+      {
+        "file": "mobile-contacto.png",
+        "section": "contacto",
+        "height": 538,
+        "fileSize": "29KB"
+      },
+      {
+        "file": "mobile-footer-7.png",
+        "section": "footer-7",
+        "height": 65,
+        "fileSize": "3KB"
+      }
+    ],
+    "pageHeight": 10901
+  }
+}
